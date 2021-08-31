@@ -23,7 +23,7 @@ def predict():
 
     prediction=loadedModel.predict([[PT08_S1_CO,PT08_S2_NMHC,PT08_S3_Nox,PT08_S4_NO2]])
 
-    if prediction ==[0]:
+    if prediction >=[35.0]:
         prediction = 'Very High pollution'
 
     else:
